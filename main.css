@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(212, 45%, 89%);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+.card{
+    width: 20rem;
+    max-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.image-container{
+     width: 95%;
+    height: 90%; 
+    max-width: 20rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.image-container img{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.title{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    width: 85%;
+    font-size: 1.35rem;
+    text-align: center;
+    font-weight: 700;
+    color:hsl(218, 44%, 22%);
+}
+
+.description{
+    margin-bottom: 1rem;
+    width: 85%;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(220, 15%, 55%);
+    font-size: 1rem;
+
+}
+
+@media screen and (min-width: 1440px) {
+    .card{
+        width: 25rem;
+        height: 36rem;
+        justify-content: flex-start;
+    }
+
+    .image-container{
+        margin-top: 1rem;
+        max-height: 295.2px;
+    }
+
+    .title{
+        margin-top: 2.75rem;
+        font-size: 1.75rem;
+        width: 90%;
+    }
+
+    .description{
+        width: 90%;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
